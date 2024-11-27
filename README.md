@@ -1,1 +1,1 @@
-WHY DOES THIS SCHEIßE DOESN'T WORK
+School project that has it's work distributed absolutely equally amongst our group
