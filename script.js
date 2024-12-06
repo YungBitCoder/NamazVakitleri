@@ -7,7 +7,7 @@ fetch('data.json')
 })
 .then(data => {
     console.log('Fetched data:', data);
-    document.getElementById('brawl_stars').textContent = `Imsak: ${data[0].Imsak}`;
+    document.getElementById('brawl_stars').innerHTML = `Imsak: ${data[0].Imsak}`;
     //document.getElementById('ogle').textContent = `Ogle: ${data[0].Ogle}`;
     //document.getElementById('yatsi').textContent = `Yatsi: ${data[0].Yatsi}`;
 })
