@@ -6,10 +6,12 @@ fetch('data.json')
     return response.json();
 })
 .then(data => {
-    console.log('Fetched data:', data);
-    document.getElementById('brawl_stars').innerHTML = `Imsak: ${data[0].Imsak}`;
-    //document.getElementById('ogle').textContent = `Ogle: ${data[0].Ogle}`;
-    //document.getElementById('yatsi').textContent = `Yatsi: ${data[0].Yatsi}`;
+    console.log('Fetched data:', data);  // This will log the data to see its structure.
+    if (data && data[0]) {
+        document.getElementById('brawl_stars').innerHTML = `Imsak: ${data[0].Imsak}`;
+    } else {
+        console.log('Data is missing or the structure is incorrect');
+    }
 })
 .catch(error => {
     console.error("Failed to fetch data", error);
