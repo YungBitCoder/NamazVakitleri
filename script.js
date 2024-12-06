@@ -3,7 +3,7 @@ fetch('data.json')
     if(!response.ok) {
         throw new Error('Failed to load data.json');
     }
-    return response.json;
+    return response.json();
 })
 .then(data => {
     console.log('Fetched data:', data);
